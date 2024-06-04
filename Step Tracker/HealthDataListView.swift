@@ -47,14 +47,12 @@ struct HealthDataListView: View {
                         .frame(width: 140)
                         .keyboardType(metric == .steps ? .numberPad : .decimalPad)
                 }
-                
             }
             .navigationTitle(metric.title)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Add Data") {
                         // Add data
-                        
                         isShowingAddData = false
                     }
                 }
